@@ -136,6 +136,16 @@ li { margin-bottom: 5px; color: var(--text-muted); }
     .container {
         grid-template-columns: 1fr;
         margin-top: 70px;
+        gap: 15px;
+    }
+    .sidebar {
+        position: static;
+        margin-bottom: 10px;
+    }
+    .profile-img {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 15px;
     }
 }
 
@@ -380,4 +390,35 @@ h3 {
     color: var(--text-muted);
     font-style: italic;
     margin-top: 4px;
+}
+/* ── Print Styles ──────────────────────────────────────────────── */
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    .controls, .tooltip {
+        display: none !important;
+    }
+    .container {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+        grid-template-columns: 240px 1fr !important;
+        gap: 20px !important;
+    }
+    .section, .project-card {
+        box-shadow: none !important;
+        border: 1px solid #dde1e9 !important;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+    .sidebar {
+        position: static !important;
+    }
+    a {
+        text-decoration: none !important;
+    }
 }
