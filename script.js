@@ -1,7 +1,7 @@
 const translations = {
     en: {
         name: "JAIMGREG TERNERO",
-        role: "Backend & Cloud Software Engineer",
+        role: "Backend & Cloud Software Developer",
         location: "Málaga, Spain",
 
         languages_title: "LANGUAGES",
@@ -13,7 +13,7 @@ const translations = {
         skills_title: "TECH STACK",
 
         profile_title: "PROFESSIONAL PROFILE",
-        profile_desc: "Software engineer with a strong focus on backend development, REST API design, and automation. Self-taught builder with production experience: I design, build and deploy cloud-backed services end-to-end — from FastAPI backends to iOS clients consuming them.",
+        profile_desc: "Software developer with a strong focus on backend development, REST API design, and automation. Self-taught builder with production experience: I design, build and deploy cloud-backed services end-to-end — from FastAPI backends to iOS clients consuming them.",
         profile_desc2: "Proven ability to identify manual processes and eliminate them through scripting and pipeline automation. Comfortable working at the intersection of software and infrastructure, and passionate about building internal tools that enable teams to operate at scale.",
 
         projects_title: "PROJECTS",
@@ -31,7 +31,7 @@ const translations = {
         proj_ener_2: "Developed internal APIs for data integration between systems; built SQL-backed Power BI dashboards for operational monitoring.",
 
         exp_title: "EXPERIENCE",
-        job_ener_title: "Backend Developer & Automation Engineer",
+        job_ener_title: "Backend & Automation Developer",
         job_ener_date: "2023 – Present",
         job_ener_1: "Designed and built a semi-automated electronic invoicing system: a custom data pipeline that ingests invoice data, tracks document state through its full lifecycle, and handles bulk group submission — reducing a multi-hour manual process to minutes.",
         job_ener_2: "Led end-to-end integration with FACe (Spain's national e-invoicing platform for public administrations) — sole developer responsible for the formal adhesion process, XML document generation (Facturae format), state management, and production deployment.",
@@ -52,10 +52,10 @@ const translations = {
         job_prev_note: "Roles in logistics (Mango), guest experience (Walt Disney World), and retail — developed strong communication, problem-solving and high-volume operational skills.",
 
         edu_title: "EDUCATION & CERTIFICATIONS",
-        edu_42_sub: "Software Engineering — Peer-to-peer methodology",
+        edu_42_sub: "Software Development — Peer-to-peer methodology",
         edu_42_date: "2022 – Present",
         edu_42_1: "Project-based curriculum covering C programming, algorithms, data structures, Unix/Linux systems, and network fundamentals.",
-        edu_42_2: "Intensive collaborative environment modelled on real engineering team dynamics.",
+        edu_42_2: "Intensive collaborative environment modelled on real development team dynamics.",
         edu_cyber_title: "Cybersecurity Bootcamp",
         edu_cyber_date: "2023",
         edu_cyber_1: "Hands-on training in network security, penetration testing fundamentals, and secure system design.",
@@ -64,7 +64,7 @@ const translations = {
     },
     es: {
         name: "JAIMGREG TERNERO",
-        role: "Ingeniero de Software — Backend & Cloud",
+        role: "Desarrollador de Software — Backend & Cloud",
         location: "Málaga, España",
 
         languages_title: "IDIOMAS",
@@ -76,7 +76,7 @@ const translations = {
         skills_title: "STACK TECNOLÓGICO",
 
         profile_title: "PERFIL PROFESIONAL",
-        profile_desc: "Ingeniero de software especializado en desarrollo backend, diseño de APIs REST y automatización. Desarrollador autodidacta con experiencia en producción: diseño, construyo y despliego servicios cloud de principio a fin — desde backends FastAPI hasta clientes iOS que los consumen.",
+        profile_desc: "Desarrollador de software especializado en desarrollo backend, diseño de APIs REST y automatización. Desarrollador autodidacta con experiencia en producción: diseño, construyo y despliego servicios cloud de principio a fin — desde backends FastAPI hasta clientes iOS que los consumen.",
         profile_desc2: "Capacidad probada para identificar procesos manuales y eliminarlos mediante scripting y automatización de pipelines. Cómodo trabajando en la intersección entre software e infraestructura, con pasión por construir herramientas internas que permitan a los equipos operar a escala.",
 
         projects_title: "PROYECTOS",
