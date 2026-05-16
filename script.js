@@ -13,8 +13,8 @@ const translations = {
         skills_title: "TECH STACK",
 
         profile_title: "PROFESSIONAL PROFILE",
-        profile_desc: "Software developer with a strong focus on backend development, REST API design, and automation. Self-taught builder with production experience: I design, build and deploy cloud-backed services end-to-end — from FastAPI backends to iOS clients consuming them.",
-        profile_desc2: "Proven ability to identify manual processes and eliminate them through scripting and pipeline automation. Comfortable working at the intersection of software and infrastructure, and passionate about building internal tools that enable teams to operate at scale.",
+        profile_desc: "Software developer focused on backend systems, REST API design, and cloud infrastructure. Self-taught builder with production experience: I design and deploy robust distributed services — from FastAPI backends to iOS clients.",
+        profile_desc2: "Proven ability to eliminate operational bottlenecks by engineering robust data pipelines. Comfortable working at the intersection of software and infrastructure, possessing practical understanding of HTTP, DNS, TCP/IP, reverse proxies and cloud networking fundamentals to enable teams to operate securely at scale.",
 
         projects_title: "PROJECTS",
         proj_bopity_1: "Multi-agent autonomous trading system with a Domain-Driven Design architecture: a network of specialised agents — each acting as an independent \"department\" (technical analysis, market sentiment, risk, timing) — that continuously gather and process market data.",
@@ -27,7 +27,7 @@ const translations = {
         proj_capitalcore_1: "Local-first financial management system with a private cloud backup API. Designed the full backend architecture from scratch.",
         proj_capitalcore_2: "REST API with modular routers: auth, backups, transactions, clients, capital groups and analytics dashboard.",
         proj_capitalcore_3: "API key + JWT security layer; SHA-256 hash-based deduplication; SQLite persistent store with SQLAlchemy ORM.",
-        proj_ener_1: "Designed and built Python automation pipelines to eliminate repetitive administrative processes, reducing manual handling time significantly.",
+        proj_ener_1: "Designed and engineered Python processing pipelines to eliminate repetitive administrative tasks, reducing manual processing time by ~80% across targeted departments.",
         proj_ener_2: "Developed internal APIs for data integration between systems; built SQL-backed Power BI dashboards for operational monitoring.",
 
         exp_title: "EXPERIENCE",
@@ -35,7 +35,7 @@ const translations = {
         job_ener_date: "2023 – Present",
         job_ener_1: "Designed and built a semi-automated electronic invoicing system: a custom data pipeline that ingests invoice data, tracks document state through its full lifecycle, and handles bulk group submission — reducing a multi-hour manual process to minutes.",
         job_ener_2: "Led end-to-end integration with FACe (Spain's national e-invoicing platform for public administrations) — sole developer responsible for the formal adhesion process, XML document generation (Facturae format), state management, and production deployment.",
-        job_ener_3: "Built Python automation pipelines replacing repetitive administrative workflows; developed internal APIs for cross-system data integration; built SQL-backed Power BI dashboards for operational monitoring.",
+        job_ener_3: "Engineered Python data pipelines to replace repetitive administrative workflows; developed internal APIs for cross-system data integration; built SQL-backed Power BI dashboards for operational monitoring.",
         job_ener_4: "Sole technical owner across the full stack: requirements gathering, architecture, implementation, testing, and ongoing maintenance — all delivered independently.",
 
         job_link_title: "Backend Integration & Operations",
@@ -76,8 +76,8 @@ const translations = {
         skills_title: "STACK TECNOLÓGICO",
 
         profile_title: "PERFIL PROFESIONAL",
-        profile_desc: "Desarrollador de software especializado en desarrollo backend, diseño de APIs REST y automatización. Desarrollador autodidacta con experiencia en producción: diseño, construyo y despliego servicios cloud de principio a fin — desde backends FastAPI hasta clientes iOS que los consumen.",
-        profile_desc2: "Capacidad probada para identificar procesos manuales y eliminarlos mediante scripting y automatización de pipelines. Cómodo trabajando en la intersección entre software e infraestructura, con pasión por construir herramientas internas que permitan a los equipos operar a escala.",
+        profile_desc: "Desarrollador de software centrado en sistemas backend, diseño de APIs REST e infraestructura cloud. Constructor autodidacta con experiencia en producción: diseño y despliego servicios distribuidos robustos — desde backends FastAPI hasta clientes iOS.",
+        profile_desc2: "Capacidad probada para eliminar cuellos de botella operativos mediante la ingeniería de pipelines de datos. Cómodo trabajando en la intersección entre software e infraestructura, poseyendo conocimientos prácticos de HTTP, DNS, TCP/IP, reverse proxies y fundamentos de redes cloud para permitir a los equipos operar a gran escala.",
 
         projects_title: "PROYECTOS",
         proj_bopity_1: "Sistema de trading autónomo multi-agente con arquitectura Domain-Driven Design: una red de agentes especializados — cada uno actuando como un \"departamento\" independiente (análisis técnico, sentimiento de mercado, riesgo, timing) — que recogen y procesan datos de mercado de forma continua.",
@@ -90,7 +90,7 @@ const translations = {
         proj_capitalcore_1: "Sistema de gestión financiera local-first con API privada de backup en cloud. Arquitectura backend diseñada desde cero.",
         proj_capitalcore_2: "API REST con routers modulares: autenticación, backups, transacciones, clientes, grupos de capital y dashboard de analítica.",
         proj_capitalcore_3: "Capa de seguridad API key + JWT; deduplicación por hash SHA-256; almacenamiento persistente SQLite con ORM SQLAlchemy.",
-        proj_ener_1: "Diseño y construcción de pipelines de automatización en Python que eliminaron procesos manuales repetitivos, reduciendo significativamente el tiempo operativo.",
+        proj_ener_1: "Diseño y programación de pipelines de procesamiento en Python para eliminar tareas administrativas repetitivas, reduciendo el tiempo de procesamiento manual en un ~80% en los departamentos objetivo.",
         proj_ener_2: "Desarrollo de APIs internas para integración de datos entre sistemas; dashboards Power BI respaldados por SQL para monitorización operacional.",
 
         exp_title: "EXPERIENCIA",
@@ -98,7 +98,7 @@ const translations = {
         job_ener_date: "2023 – Actualidad",
         job_ener_1: "Diseño y construcción de un sistema de facturación electrónica semi-automático: pipeline de datos propio que ingiere facturas, gestiona el estado de cada documento a lo largo de su ciclo de vida y automatiza la remisión en grupo — reduciendo un proceso manual de horas a minutos.",
         job_ener_2: "Integración completa con FACe (plataforma de facturación electrónica del Estado español) — único desarrollador responsable del proceso de adhesión formal, generación de XML (formato Facturae), gestión de estados y despliegue en producción.",
-        job_ener_3: "Construcción de pipelines de automatización en Python para eliminar flujos administrativos manuales; desarrollo de APIs internas para integración de datos entre sistemas; dashboards Power BI con SQL para monitorización operacional.",
+        job_ener_3: "Ingeniería de pipelines de datos en Python para reemplazar flujos administrativos manuales; desarrollo de APIs internas para integración de datos; dashboards Power BI con SQL para monitorización.",
         job_ener_4: "Responsable técnico único en todo el stack: toma de requisitos, arquitectura, implementación, testing y mantenimiento — todo entregado de forma autónoma.",
 
         job_link_title: "Integración Backend & Operaciones",
