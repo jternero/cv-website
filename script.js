@@ -131,11 +131,13 @@ const translations = {
 
 
 Object.assign(translations.es, {
+ contact_description: 'Para propuestas de trabajo o proyectos, escríbeme.', contact_button: 'Enviar un correo', contact_hint: 'Se abrirá tu aplicación de correo.',
  skip: 'Saltar al contenido', nav_projects: 'Proyectos', nav_exp: 'Experiencia', nav_contact: 'Contacto',
  hero_1: 'Menos fricción.', hero_2: 'Más software.', hero_desc: 'Desarrollo de software, aplicaciones y automatización de procesos.',
  view_projects: 'Explorar proyectos', talk: 'Hablemos', hero_location: 'Málaga, España · Python / FastAPI / Cloud', portrait_label: 'Detrás del código', about_label: 'EL PERFIL', about_title: 'Del problema al producto.', badge_agent: 'Sistema multiagente', footer_title: '¿Construimos algo útil?', projects_title: 'Proyectos seleccionados', profile_title: 'Software con propósito', exp_title: 'El camino hasta aquí', edu_title: 'Aprender construyendo'
 });
 Object.assign(translations.en, {
+ contact_description: 'Get in touch about work opportunities or projects.', contact_button: 'Send an email', contact_hint: 'Opens your email app.',
  skip: 'Skip to content', nav_projects: 'Projects', nav_exp: 'Experience', nav_contact: 'Contact',
  hero_1: 'Less friction.', hero_2: 'More software.', hero_desc: 'Software development, applications and process automation.',
  view_projects: 'Explore projects', talk: 'Let’s talk', hero_location: 'Málaga, Spain · Python / FastAPI / Cloud', portrait_label: 'Behind the code', about_label: 'THE PROFILE', about_title: 'From problem to product.', badge_agent: 'Multi-agent system', footer_title: 'Let’s build something useful.', projects_title: 'Selected projects', profile_title: 'Software with purpose', exp_title: 'The journey so far', edu_title: 'Learning by building'

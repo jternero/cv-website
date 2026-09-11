@@ -489,3 +489,11 @@ h2 {
 .about-title {
   font-size:24px}
 }
+
+.contact-section { display:flex; align-items:center; justify-content:space-between; gap:32px; }
+.contact-section h2 { font-size:clamp(32px,4vw,48px); margin-bottom:16px; }
+.contact-section p { color:var(--muted); margin:0 0 16px; }
+.contact-email { color:var(--accent); font-size:clamp(18px,2.5vw,28px); overflow-wrap:anywhere; }
+.contact-action { flex-shrink:0; }
+.contact-action p { font-size:13px; margin:12px 0 0; }
+@media(max-width:760px) { .contact-section { flex-direction:column; align-items:flex-start; gap:24px; } }

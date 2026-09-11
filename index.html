@@ -49,7 +49,7 @@
             <p class="eyebrow" data-i18n="about_label">EL PERFIL</p>
             <h2 class="about-title" data-i18n="about_title">Del problema al producto.</h2>
             <!-- Contact -->
-            <div class="contact-info" id="contact">
+            <div class="contact-info">
                 <div class="contact-item">
                     <span class="contact-icon">📍</span>
                     <span data-i18n="location">Málaga, Spain</span>
@@ -269,7 +269,19 @@
         </main>
     </div>
 
-    <footer class="site-footer"><p data-i18n="footer_title">¿Construimos algo útil?</p><a href="mailto:jg.ternero@gmail.com">jg.ternero@gmail.com ↗</a><div><span>© Jaimgreg Ternero</span><a href="https://github.com/jternero" target="_blank" rel="noopener">GitHub ↗</a><a href="https://linkedin.com/in/jaimgreg-ternero" target="_blank" rel="noopener">LinkedIn ↗</a></div></footer>
+    <footer class="site-footer">
+        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+            <div>
+                <h2 id="contact-heading" data-i18n="nav_contact">Contacto</h2>
+                <p data-i18n="contact_description">Para propuestas de trabajo o proyectos, escríbeme.</p>
+                <a class="contact-email" href="mailto:jg.ternero@gmail.com">jg.ternero@gmail.com</a>
+            </div>
+            <div class="contact-action">
+                <a class="button primary" href="mailto:jg.ternero@gmail.com"><span data-i18n="contact_button">Enviar un correo</span> ↗</a>
+                <p data-i18n="contact_hint">Se abrirá tu aplicación de correo.</p>
+            </div>
+        </section>
+        <div><span>© Jaimgreg Ternero</span><a href="https://github.com/jternero" target="_blank" rel="noopener">GitHub ↗</a><a href="https://linkedin.com/in/jaimgreg-ternero" target="_blank" rel="noopener">LinkedIn ↗</a></div></footer>
     <script src="script.js"></script>
 </body>
 
