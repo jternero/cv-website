@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -13,31 +13,43 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 </head>
 
 <body>
 
-    <!-- Controls -->
-    <div class="controls" role="toolbar" aria-label="Page controls">
-        <div style="position:relative;">
-            <button class="btn-toggle" id="langToggle" aria-label="Toggle language">EN</button>
-            <div class="tooltip" id="tooltip" role="tooltip">Switch language / Cambiar idioma</div>
+    <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+    <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="Jaimgreg Ternero, inicio"><span class="wordmark-initial">j</span>ternero<span class="wordmark-dot">.</span></a>
+        <nav aria-label="Principal">
+            <a href="#projects-heading" data-i18n="nav_projects">Proyectos</a>
+            <a href="#exp-heading" data-i18n="nav_exp">Experiencia</a>
+            <a href="#contact" data-i18n="nav_contact">Contacto</a>
+        </nav>
+        <div class="controls">
+            <button class="btn-toggle" id="langToggle" aria-label="Switch to English">EN</button>
+            <button class="btn-toggle" id="themeToggle" aria-label="Cambiar tema">◐</button>
         </div>
-        <button class="btn-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-    </div>
-
+    </header>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+            <p class="eyebrow">JAIMGREG TERNERO / BACKEND & CLOUD</p>
+            <h1 id="hero-title"><span data-i18n="hero_1">Menos fricción.</span><br><span class="accent" data-i18n="hero_2">Más software.</span></h1>
+            <p class="hero-description" data-i18n="hero_desc">Desarrollo de software, aplicaciones y automatización de procesos.</p>
+            <div class="hero-actions"><a class="button primary" href="#projects-heading"><span data-i18n="view_projects">Explorar proyectos</span> ↗</a><a class="text-link" href="mailto:jg.ternero@gmail.com" data-i18n="talk">Hablemos</a></div>
+            <p class="hero-location" data-i18n="hero_location">Málaga, España · Python / FastAPI / Cloud</p>
+        </div>
+        <figure class="portrait"><img src="assets/profile.png" alt="Jaimgreg Ternero" width="684" height="912" fetchpriority="high"><figcaption><span data-i18n="portrait_label">Detrás del código</span><span>01 / JT</span></figcaption></figure>
+    </section>
+    <div class="expertise-strip"><span>BACKEND ENGINEERING</span><span aria-hidden="true">✳</span><span>CLOUD & APIs</span><span aria-hidden="true">✳</span><span>AUTOMATION</span><span aria-hidden="true">✳</span><span>PYTHON</span></div>
     <div class="container">
         <!-- ========== SIDEBAR ========== -->
         <aside class="sidebar">
-            <img src="assets/profile.png" alt="Jaimgreg Ternero" class="profile-img"
-                onerror="this.style.display='none'">
-
-            <h1 data-i18n="name">JAIMGREG TERNERO</h1>
-            <p class="profession" data-i18n="role">Backend &amp; Cloud Software Developer</p>
-
+            <p class="eyebrow" data-i18n="about_label">EL PERFIL</p>
+            <h2 class="about-title" data-i18n="about_title">Del problema al producto.</h2>
             <!-- Contact -->
-            <div class="contact-info">
+            <div class="contact-info" id="contact">
                 <div class="contact-item">
                     <span class="contact-icon">📍</span>
                     <span data-i18n="location">Málaga, Spain</span>
@@ -94,13 +106,13 @@
         </aside>
 
         <!-- ========== MAIN CONTENT ========== -->
-        <main class="main-content">
+        <main class="main-content" id="main">
 
             <!-- Profile -->
             <section class="section" aria-labelledby="profile-heading">
                 <h2 id="profile-heading" data-i18n="profile_title">PROFESSIONAL PROFILE</h2>
-                <p data-i18n="profile_desc">Software developer focused on backend systems, REST API design, and cloud infrastructure. Self-taught builder with production experience designing and building distributed services from FastAPI backends to iOS clients.</p>
-                <p data-i18n="profile_desc2" style="margin-top:10px;">Focused on eliminating operational bottlenecks by building reliable data pipelines. Comfortable working with both software and infrastructure, with practical knowledge of HTTP, DNS, TCP/IP, reverse proxies, and cloud networking fundamentals.</p>
+                <p data-i18n="profile_desc">Software developer with a background in operations and process management. I design and build applications, backend services and automation tools, combining technical judgement with an understanding of business needs.</p>
+                <p data-i18n="profile_desc2" style="margin-top:10px;">I have developed projects end to end, from requirements definition and architecture to implementation and maintenance. My work spans iOS applications, electronic invoicing systems, and automation and artificial intelligence tools.</p>
             </section>
 
             <!-- Projects -->
@@ -111,7 +123,7 @@
                     <div class="project-header">
                         <div>
                             <span class="project-title">Bopity / SHARK V4</span>
-                            <span class="project-badge">Autonomous Agent · Live</span>
+                            <span class="project-badge" data-i18n="badge_agent">Sistema multiagente</span>
                         </div>
                         <span class="project-stack">Python · DeepSeek API · MetaTrader 5 · Multi-Agent · DDD</span>
                     </div>
@@ -127,14 +139,15 @@
                     <div class="project-header">
                         <div>
                             <span class="project-title">LaborIQ Worker</span>
-                            <span class="project-badge">App Store · Live</span>
+                            <span class="project-badge">iOS / Backend</span>
                         </div>
                         <span class="project-stack">FastAPI · Swift · Render · JWT · SQLite</span>
                     </div>
                     <ul>
-                        <li data-i18n="proj_laboriq_1">Full-stack iOS application live on the App Store, using a custom Python and FastAPI backend on Render.</li>
-                        <li data-i18n="proj_laboriq_2">Built a cloud backup system with REST endpoints, SHA-256 deduplication, JWT-authenticated access, and an SQLite index.</li>
-                        <li data-i18n="proj_laboriq_3">Implemented the full authentication flow, including JWT token lifecycles, secure storage on the iOS client, and automated re-auth before API calls.</li>
+                        <li data-i18n="proj_laboriq_1">An iOS app that brings workers’ day-to-day tasks together: clocking in and out, submitting work reports and communicating with their team from their phone.</li>
+                        <li data-i18n="proj_laboriq_2">Workers can record clock-ins and clock-outs, check accumulated hours and complete work reports through forms. The app also includes team chat and a company announcement board.</li>
+                        <li data-i18n="proj_laboriq_3">Built the Swift app and its own Python/FastAPI backend deployed on Render, with JWT authentication and secure session storage on iOS.</li>
+                        <li data-i18n="proj_laboriq_4">Cloud backup system with REST endpoints, SHA-256 deduplication and an SQLite index.</li>
                     </ul>
                 </div>
 
@@ -142,7 +155,7 @@
                     <div class="project-header">
                         <div>
                             <span class="project-title">CapitalCore</span>
-                            <span class="project-badge">Cloud API · Live</span>
+                            <span class="project-badge">Cloud API</span>
                         </div>
                         <span class="project-stack">FastAPI · SQLModel · SQLAlchemy · PyJWT · Render</span>
                     </div>
@@ -156,7 +169,7 @@
                 <div class="project-card">
                     <div class="project-header">
                         <div>
-                            <span class="project-title">Automation Pipelines at Energías del Mediterráneo</span>
+                            <span class="project-title">Energías del Mediterráneo</span>
                         </div>
                         <span class="project-stack">Python · Power BI · SQL · REST APIs</span>
                     </div>
@@ -256,6 +269,7 @@
         </main>
     </div>
 
+    <footer class="site-footer"><p data-i18n="footer_title">¿Construimos algo útil?</p><a href="mailto:jg.ternero@gmail.com">jg.ternero@gmail.com ↗</a><div><span>© Jaimgreg Ternero</span><a href="https://github.com/jternero" target="_blank" rel="noopener">GitHub ↗</a><a href="https://linkedin.com/in/jaimgreg-ternero" target="_blank" rel="noopener">LinkedIn ↗</a></div></footer>
     <script src="script.js"></script>
 </body>
 

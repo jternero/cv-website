@@ -13,17 +13,18 @@ const translations = {
         skills_title: "TECH STACK",
 
         profile_title: "PROFESSIONAL PROFILE",
-        profile_desc: "Software developer focused on backend systems, REST API design, and cloud infrastructure. Self-taught builder with production experience designing and building distributed services from FastAPI backends to iOS clients.",
-        profile_desc2: "Focused on eliminating operational bottlenecks by building reliable data pipelines. Comfortable working with both software and infrastructure, with practical knowledge of HTTP, DNS, TCP/IP, reverse proxies, and cloud networking fundamentals.",
+        profile_desc: "Software developer with a background in operations and process management. I design and build applications, backend services and automation tools, combining technical judgement with an understanding of business needs.",
+        profile_desc2: "I have developed projects end to end, from requirements definition and architecture to implementation and maintenance. My work spans iOS applications, electronic invoicing systems, and automation and artificial intelligence tools.",
 
         projects_title: "PROJECTS",
         proj_bopity_1: "Autonomous trading system built with Domain-Driven Design. Uses a network of specialized agents acting as independent departments for technical analysis, market sentiment, risk, and timing.",
         proj_bopity_2: "Agents send analysis to a central DeepSeek LLM via API. The LLM acts as the decision engine, evaluating all department inputs to issue orders only when trades are viable.",
         proj_bopity_3: "Distributed indicators including VWAP, MACD, Ichimoku, Fibonacci, and RSI. Scans EUR/USD, GBP/USD, XAU/USD, and BTC/USD every 30 minutes without human intervention.",
         proj_bopity_4: "Automatic order execution via MetaTrader 5 Python API. Handles lot sizing, stop-loss, and position management. Logs reasoning traces and confidence scores in real time.",
-        proj_laboriq_1: "Full-stack iOS application live on the App Store, using a custom Python and FastAPI backend on Render.",
-        proj_laboriq_2: "Built a cloud backup system with REST endpoints, SHA-256 deduplication, JWT-authenticated access, and an SQLite index.",
-        proj_laboriq_3: "Implemented the full authentication flow, including JWT token lifecycles, secure storage on the iOS client, and automated re-auth before API calls.",
+        proj_laboriq_1: "An iOS app that brings workers’ day-to-day tasks together: clocking in and out, submitting work reports and communicating with their team from their phone.",
+        proj_laboriq_2: "Workers can record clock-ins and clock-outs, check accumulated hours and complete work reports through forms. The app also includes team chat and a company announcement board.",
+        proj_laboriq_3: "Built the Swift app and its own Python/FastAPI backend deployed on Render, with JWT authentication and secure session storage on iOS.",
+        proj_laboriq_4: "Cloud backup system with REST endpoints, SHA-256 deduplication and an SQLite index.",
         proj_capitalcore_1: "Local-first financial management system with a private cloud backup API. Designed the backend architecture from scratch.",
         proj_capitalcore_2: "REST API with modular routers for auth, backups, transactions, clients, capital groups, and an analytics dashboard.",
         proj_capitalcore_3: "API key and JWT security layer with SHA-256 hash-based deduplication and SQLite persistent store using SQLAlchemy.",
@@ -76,17 +77,18 @@ const translations = {
         skills_title: "STACK TECNOLÓGICO",
 
         profile_title: "PERFIL PROFESIONAL",
-        profile_desc: "Desarrollador de software centrado en sistemas backend, diseño de APIs REST e infraestructura cloud. Constructor autodidacta con experiencia en producción: diseño y despliego servicios distribuidos robustos desde backends FastAPI hasta clientes iOS.",
-        profile_desc2: "Capacidad probada para eliminar cuellos de botella operativos mediante la ingeniería de pipelines de datos. Cómodo trabajando en la intersección entre software e infraestructura, poseyendo conocimientos prácticos de HTTP, DNS, TCP/IP, reverse proxies y fundamentos de redes cloud para permitir a los equipos operar a gran escala.",
+        profile_desc: "Desarrollador de software con experiencia en operaciones y gestión de procesos. Diseño y desarrollo aplicaciones, servicios backend y automatizaciones, combinando criterio técnico con conocimiento del negocio.",
+        profile_desc2: "He desarrollado proyectos de forma integral: desde la definición de requisitos y la arquitectura hasta la implementación y el mantenimiento. Mi trabajo abarca aplicaciones iOS, sistemas de facturación electrónica y herramientas de automatización e inteligencia artificial.",
 
         projects_title: "PROYECTOS",
         proj_bopity_1: "Sistema de trading autónomo multi-agente con arquitectura Domain-Driven Design: una red de agentes especializados, cada uno actuando como un \"departamento\" independiente (análisis técnico, sentimiento de mercado, riesgo, timing) que recogen y procesan datos de mercado de forma continua.",
         proj_bopity_2: "Cada agente alimenta con su análisis estructurado a un LLM central (DeepSeek vía API), que actúa como motor de decisión único: razona sobre los inputs de todos los departamentos y emite BUY/SELL/HOLD solo cuando la operación es viable.",
         proj_bopity_3: "Indicadores distribuidos entre agentes: VWAP, MACD, Ichimoku, Fibonacci, RSI. Escanea EUR/USD, GBP/USD, XAU/USD, BTC/USD cada 30 minutos sin intervención humana.",
         proj_bopity_4: "Ejecución automática de órdenes vía MetaTrader 5 Python API con cálculo de lotes, stop-loss y gestión de posiciones de extremo a extremo. Traza de razonamiento completa y score de confianza logueado en tiempo real.",
-        proj_laboriq_1: "Aplicación iOS en el App Store con backend propio en Python/FastAPI desplegado en Render.",
-        proj_laboriq_2: "Sistema de backup cloud diseñado e implementado: endpoints REST, deduplicación SHA-256, acceso autenticado por JWT e índice SQLite.",
-        proj_laboriq_3: "Flujo de autenticación completo: ciclo de vida de tokens JWT, almacenamiento seguro en cliente iOS, re-autenticación automática antes de cada llamada a la API.",
+        proj_laboriq_1: "App iOS para centralizar el día a día de los trabajadores: fichajes, partes de trabajo y comunicación con el equipo desde el móvil.",
+        proj_laboriq_2: "Permite registrar entradas y salidas, consultar las horas acumuladas y completar partes de trabajo mediante formularios. Incluye chat y un tablón de anuncios de la empresa.",
+        proj_laboriq_3: "Desarrollo de la aplicación en Swift y del backend propio en Python/FastAPI desplegado en Render, con autenticación JWT y almacenamiento seguro de la sesión en iOS.",
+        proj_laboriq_4: "Sistema de backup cloud con endpoints REST, deduplicación SHA-256 e índice SQLite.",
         proj_capitalcore_1: "Sistema de gestión financiera local-first con API privada de backup en cloud. Arquitectura backend diseñada desde cero.",
         proj_capitalcore_2: "API REST con routers modulares: autenticación, backups, transacciones, clientes, grupos de capital y dashboard de analítica.",
         proj_capitalcore_3: "Capa de seguridad API key + JWT; deduplicación por hash SHA-256; almacenamiento persistente SQLite con ORM SQLAlchemy.",
@@ -127,58 +129,36 @@ const translations = {
     }
 };
 
-// ── Theme ──────────────────────────────────────────────────────────
+
+Object.assign(translations.es, {
+ skip: 'Saltar al contenido', nav_projects: 'Proyectos', nav_exp: 'Experiencia', nav_contact: 'Contacto',
+ hero_1: 'Menos fricción.', hero_2: 'Más software.', hero_desc: 'Desarrollo de software, aplicaciones y automatización de procesos.',
+ view_projects: 'Explorar proyectos', talk: 'Hablemos', hero_location: 'Málaga, España · Python / FastAPI / Cloud', portrait_label: 'Detrás del código', about_label: 'EL PERFIL', about_title: 'Del problema al producto.', badge_agent: 'Sistema multiagente', footer_title: '¿Construimos algo útil?', projects_title: 'Proyectos seleccionados', profile_title: 'Software con propósito', exp_title: 'El camino hasta aquí', edu_title: 'Aprender construyendo'
+});
+Object.assign(translations.en, {
+ skip: 'Skip to content', nav_projects: 'Projects', nav_exp: 'Experience', nav_contact: 'Contact',
+ hero_1: 'Less friction.', hero_2: 'More software.', hero_desc: 'Software development, applications and process automation.',
+ view_projects: 'Explore projects', talk: 'Let’s talk', hero_location: 'Málaga, Spain · Python / FastAPI / Cloud', portrait_label: 'Behind the code', about_label: 'THE PROFILE', about_title: 'From problem to product.', badge_agent: 'Multi-agent system', footer_title: 'Let’s build something useful.', projects_title: 'Selected projects', profile_title: 'Software with purpose', exp_title: 'The journey so far', edu_title: 'Learning by building'
+});
+const readPreference = (key) => { try { return localStorage.getItem(key); } catch { return null; } };
+const savePreference = (key, value) => { try { localStorage.setItem(key, value); } catch {} };
 const themeToggle = document.getElementById('themeToggle');
-const body = document.body;
-
-const savedTheme = localStorage.getItem('theme') || 'light';
-if (savedTheme === 'dark') {
-    body.setAttribute('data-theme', 'dark');
-    themeToggle.textContent = '☀️';
-}
-
-themeToggle.addEventListener('click', () => {
-    const isDark = body.getAttribute('data-theme') === 'dark';
-    if (isDark) {
-        body.removeAttribute('data-theme');
-        localStorage.setItem('theme', 'light');
-        themeToggle.textContent = '🌙';
-    } else {
-        body.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-        themeToggle.textContent = '☀️';
-    }
-});
-
-// ── Language ───────────────────────────────────────────────────────
 const langToggle = document.getElementById('langToggle');
-let currentLang = 'en';
-
-function updateLanguage() {
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (translations[currentLang][key] !== undefined) {
-            el.innerText = translations[currentLang][key];
-        }
-    });
-    document.documentElement.lang = currentLang;
+let currentLang = readPreference('language') === 'en' ? 'en' : 'es';
+let theme = readPreference('theme') === 'light' ? 'light' : 'dark';
+function updateTheme() {
+ document.body.dataset.theme = theme;
+ themeToggle.setAttribute('aria-pressed', String(theme === 'light'));
+ themeToggle.setAttribute('aria-label', currentLang === 'es' ? 'Activar tema ' + (theme === 'dark' ? 'claro' : 'oscuro') : 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' theme');
 }
-
-langToggle.addEventListener('click', () => {
-    currentLang = currentLang === 'en' ? 'es' : 'en';
-    langToggle.textContent = currentLang === 'en' ? 'ES' : 'EN';
-    updateLanguage();
-});
-
-// ── Tooltip ────────────────────────────────────────────────────────
-window.addEventListener('load', () => {
-    const tooltip = document.getElementById('tooltip');
-    setTimeout(() => tooltip.classList.add('visible'), 1200);
-    setTimeout(() => tooltip.classList.remove('visible'), 6000);
-});
-
-// ── Skill tag hover glow ───────────────────────────────────────────
-document.querySelectorAll('.skill-tag').forEach(tag => {
-    tag.addEventListener('mouseenter', () => tag.classList.add('active'));
-    tag.addEventListener('mouseleave', () => tag.classList.remove('active'));
-});
+function updateLanguage() {
+ document.querySelectorAll('[data-i18n]').forEach(el => { const value = translations[currentLang][el.dataset.i18n]; if(value !== undefined) el.textContent = value; });
+ document.documentElement.lang = currentLang;
+ langToggle.textContent = currentLang === 'es' ? 'EN' : 'ES';
+ langToggle.setAttribute('aria-label', currentLang === 'es' ? 'Switch to English' : 'Cambiar a español');
+ document.querySelector('nav').setAttribute('aria-label', currentLang === 'es' ? 'Principal' : 'Main navigation');
+ updateTheme();
+}
+langToggle.addEventListener('click', () => { currentLang = currentLang === 'es' ? 'en' : 'es'; savePreference('language', currentLang); updateLanguage(); });
+themeToggle.addEventListener('click', () => { theme = theme === 'dark' ? 'light' : 'dark'; savePreference('theme', theme); updateTheme(); });
+updateLanguage();
